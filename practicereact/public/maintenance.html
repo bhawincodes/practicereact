@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <title>We'll be back soon</title>
+    <style>
+      :root {
+        --text: #6b6375;
+        --text-h: #08060d;
+        --bg: #fff;
+        --border: #e5e4e7;
+        --accent: #aa3bff;
+        --accent-bg: rgba(170, 59, 255, 0.1);
+        --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text: #9ca3af;
+          --text-h: #f3f4f6;
+          --bg: #16171d;
+          --border: #2e303a;
+          --accent: #c084fc;
+          --accent-bg: rgba(192, 132, 252, 0.15);
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: var(--bg);
+        color: var(--text);
+        font: 18px/145% var(--sans);
+        letter-spacing: 0.18px;
+      }
+
+      main {
+        width: min(100%, 560px);
+        padding: 48px 32px;
+        text-align: center;
+        border: 1px solid var(--border);
+      }
+
+      p.badge {
+        display: inline-block;
+        margin: 0 0 20px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--accent-bg);
+        color: var(--accent);
+        font-size: 14px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        color: var(--text-h);
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        line-height: 1.15;
+      }
+
+      p.message {
+        margin: 0;
+      }
+
+      @media (max-width: 1024px) {
+        body {
+          font-size: 16px;
+        }
+
+        main {
+          padding: 36px 20px;
+        }
+
+        h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="badge">Maintenance</p>
+      <h1>We'll be back soon</h1>
+      <p class="message">
+        This site is temporarily unavailable while we make updates. Please try
+        again in a little while.
+      </p>
+    </main>
+  </body>
+</html>

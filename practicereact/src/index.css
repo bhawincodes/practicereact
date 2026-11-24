@@ -1,0 +1,42 @@
+:root {
+  --ink: #1c2430;
+  --muted: #5c6b7a;
+  --line: #e3e8ee;
+  --header: #1e3a4c;
+  --header-text: #f4f7f8;
+  --row: #ffffff;
+  --row-alt: #f6f8fa;
+  --page: #eef2f5;
+  --approved: #0f6b4c;
+  --approved-bg: #e5f6ef;
+  --pending: #8a5a00;
+  --pending-bg: #fff4d8;
+  --active: #0f4c81;
+  --active-bg: #e7f1fa;
+  font: 15px/1.45 "Segoe UI", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--page);
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 650;
+}
+
+p {
+  margin: 0;
+}
